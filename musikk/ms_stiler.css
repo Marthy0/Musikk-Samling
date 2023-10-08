@@ -1,0 +1,280 @@
+/*Generelt*/
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 98%;
+  /*background-color: #dbdbdb;*/
+}
+
+h3, h4, p
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+h3
+{
+    font-size: 18px;
+}
+
+A:link
+{
+    color: #3b3b3b;
+}
+A:visited
+{
+    color: #808080;
+}
+A:active
+{
+    color: #dbdbdb;
+}
+
+
+/*Nav-bar toppmeny og medievalg*/
+.medieNav
+{
+  overflow: hidden;
+  background-color: white;
+  height: 55px;
+  /*border-style: solid;
+  border-width: 2px;
+  border-color: white;*/
+  margin: 0;
+}
+  .medieNav .valg
+  {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    float: left;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+    /*outline-color: none;
+    outline-width: 1px;*/
+    outline-style: none;
+    height: 50px;
+    width: 80px;
+    margin: 0;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+    #rediger, #leggTil
+  {
+    float: right;
+  }
+  
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 0px;
+    /* background-color: inherit; */
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .medieNav .valg:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+  }
+  .medieNav .valg:hover
+  {
+    /*background-color: white;
+    color: black;*/
+  }
+  .medieNav .valg.active
+  {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+
+  .dropdown-content .valg {
+    float: none;
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 0;
+    /*margin-top: 50px;*/
+  }
+
+  .dropdown-content valg:hover {
+    /* background-color: #ddd; */
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 50px;
+  }
+
+
+/*Artistmeny*/
+#artistvalg
+{
+  float: left;
+  overflow: scroll;
+  /*background-color: green;*/
+  height: 95%;
+  width: 180px;
+  /*position: sticky;*/
+}
+
+#artistvalg td:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+  #artistTabell
+  {
+      /*background-color: black;*/
+  }
+
+  #artistKnapp
+  {
+    width: 100%;
+    /* text-align: center; */
+  }
+  
+  .overlay 
+  {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content 
+  {
+    position: relative;
+    top: 1%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  a.plain
+  {
+      text-decoration:none;
+      color:black;
+  }
+
+
+/*Viser stort bilde*/
+  .overlay {
+    height: 600px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 2s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 1%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+}
+.overlay-content img {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+
+
+/*Enheter*/
+
+#enheter
+{
+  overflow: hidden;
+  /* background-color: lightblue; */
+  /* max-height: none; */
+   height: 95%; 
+   position: relative;
+   /*display: inline-block;*/
+   background-color: #ededed;
+}
+  .enhet
+  {
+    width: 250px;
+    display: inline-block;
+    height: 350px;
+    padding: 5px;
+    border: 1.5px solid black;
+    background-color: white;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+ 
+  .navn
+  {
+    /* margin: 0; */
+    float: left;
+    /* overflow: hidden; */
+    position: static;
+    width: 180px;
+    min-height: 43px;
+  }
+  .tilstand
+  {
+    /* margin: 0; */
+    float: right;
+    /* overflow: hidden; */
+  }
+  .bilde
+  {
+    max-width: 250px;
+    max-height: 250px;
+    border: 2px solid white;*/
+  }
+  
+  .bilde:hover
+  {
+      /*border: 2px solid black;*/
+      box-shadow: 0px 5px 6px 7px #888888;
+  }
+  /*.andreArtister
+  {
+      min-height: 43px;
+  }
+  .beskrivelse
+  {
+      min-height: 43px;
+  }*/
+

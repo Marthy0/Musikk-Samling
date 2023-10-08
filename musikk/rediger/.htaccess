@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /customers/2/4/5/mthorst.no/httpd.www/musikk/rediger/.htpasswd
+Require valid-user
